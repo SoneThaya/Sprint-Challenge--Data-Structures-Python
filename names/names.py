@@ -25,7 +25,9 @@ for element in names_1:
     duplicates.append(element)
     
 
-
+#             ******************                  ****************
+# STRETCH GOAL TIME 0.00699 ms
+# duplicates = list(set(names_1).intersection(names_2))
 
 end_time = time.time()
 print (f"{len(duplicates)} duplicates:\n\n{', '.join(duplicates)}\n\n")
@@ -37,6 +39,4 @@ print (f"runtime: {end_time - start_time} seconds")
 # structures, but you may not import any additional libraries that you did not write yourself.
 
 
-#             ******************                  ****************
-# STRETCH GOAL TIME 0.00299 - 0.00399 ms
-#duplicates = list(set(names_1).intersection(names_2))
+
