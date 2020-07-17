@@ -39,12 +39,24 @@ class LinkedList:
         return False
 
     def reverse_list(self, node, prev):
+        # sets 1's prev to be None
         self.prev = None
+        # store 1 in a variable
+        # 1 will be current
         current = self.head
         
+        
         while current is not None:
+            # first loop
+            # store current's next in a variable before chaning pointers
+            # next will be 1's next which is 2
             next = current.next_node
+            # 1's next will be prev which is None
             current.next_node = prev
+            # 1 will be current
             prev = current
+            # current will be 2 from earlier
             current = next
+            # repeat until next_node is None
+        # make last node the head
         self.head = prev
